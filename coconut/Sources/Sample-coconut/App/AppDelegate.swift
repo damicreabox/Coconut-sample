@@ -7,7 +7,17 @@
 //
 
 import Foundation
+import Coconut
 
-public class AppDelegate {
+public class AppDelegate : NSObject, ApplicationDelegate {
     
+    public var window : Window? = nil
+    
+    public func applicationDidFinishLaunching(_ aNotification: Notification) {
+        
+    }
+    
+    public func applicationWillTerminate(_ aNotification: Notification) {
+        
+    }
 }
