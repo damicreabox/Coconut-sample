@@ -13,6 +13,15 @@ public class AppDelegate : NSObject, ApplicationDelegate {
     
     public var window : Window? = nil
     
+    func clic1(_ button: NSButton) {
+        print("Click 1")
+    }
+    
+    func clic2(_ button: NSButton) {
+        print("Click 2")
+    }
+
+    
     public func applicationDidFinishLaunching(_ aNotification: Notification) {
         
     }

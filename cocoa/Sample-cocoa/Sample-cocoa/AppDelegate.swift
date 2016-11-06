@@ -7,12 +7,20 @@
 //
 
 import Cocoa
+import Foundation
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet weak var window: NSWindow!
-
+    
+    @IBAction func clic1(_ button: NSButton) {
+        print("Click 1")
+    }
+    
+    @IBAction func clic2(_ button: NSButton) {
+        print("Click 2")
+    }
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application

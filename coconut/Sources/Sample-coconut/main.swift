@@ -1,9 +1,9 @@
 import Foundation
 import Coconut
 
-let myUIClassName = "MyUIClass"
+let myUIClassName = "MainMenu"
 UIFactoryManager.instance.register(name: myUIClassName) {
-    return MyUIClass()
+    return MainMenu()
 }
 
 // Create application
