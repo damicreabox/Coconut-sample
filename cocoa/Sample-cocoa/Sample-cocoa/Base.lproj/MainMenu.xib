@@ -45,14 +45,13 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="480" height="360"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1057"/>
             <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                 <subviews>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xUt-bu-Hb2">
-                        <rect key="frame" x="198" y="312" width="86" height="32"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xUt-bu-Hb2">
+                        <rect key="frame" x="197" y="312" width="86" height="32"/>
                         <buttonCell key="cell" type="push" title="Button1" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="bvJ-yk-a4K">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -61,9 +60,8 @@
                             <action selector="clic1:" target="Voe-Tx-rLC" id="Jam-PQ-fHE"/>
                         </connections>
                     </button>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uIE-mx-zRF">
-                        <rect key="frame" x="197" y="279" width="89" height="32"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="uIE-mx-zRF">
+                        <rect key="frame" x="196" y="279" width="89" height="32"/>
                         <buttonCell key="cell" type="push" title="Button2" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="hG1-HT-EtB">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -72,9 +70,8 @@
                             <action selector="clic2:" target="Voe-Tx-rLC" id="ifz-lK-auI"/>
                         </connections>
                     </button>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N5n-5o-U8L">
-                        <rect key="frame" x="200" y="246" width="83" height="32"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="N5n-5o-U8L">
+                        <rect key="frame" x="198" y="246" width="83" height="32"/>
                         <buttonCell key="cell" type="push" title="Quitter" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="juC-RX-VPf">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -83,7 +80,24 @@
                             </connections>
                         </buttonCell>
                     </button>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cfw-sD-Bht">
+                        <rect key="frame" x="14" y="162" width="81" height="32"/>
+                        <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="YBK-Li-SSw">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                    </button>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="N5n-5o-U8L" firstAttribute="top" secondItem="uIE-mx-zRF" secondAttribute="bottom" constant="12" id="4LA-1R-h44"/>
+                    <constraint firstItem="cfw-sD-Bht" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" id="5pB-00-wYn"/>
+                    <constraint firstItem="uIE-mx-zRF" firstAttribute="top" secondItem="xUt-bu-Hb2" secondAttribute="bottom" constant="12" id="Hcb-vf-V0w"/>
+                    <constraint firstItem="uIE-mx-zRF" firstAttribute="centerX" secondItem="EiT-Mj-1SZ" secondAttribute="centerX" id="Zh9-U1-0ze"/>
+                    <constraint firstItem="xUt-bu-Hb2" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" id="ZwI-ox-FxW"/>
+                    <constraint firstItem="xUt-bu-Hb2" firstAttribute="centerX" secondItem="EiT-Mj-1SZ" secondAttribute="centerX" id="h60-qP-Waq"/>
+                    <constraint firstItem="cfw-sD-Bht" firstAttribute="centerY" secondItem="EiT-Mj-1SZ" secondAttribute="centerY" id="lwh-Ck-6RY"/>
+                    <constraint firstItem="N5n-5o-U8L" firstAttribute="centerX" secondItem="EiT-Mj-1SZ" secondAttribute="centerX" id="vBo-un-sNh"/>
+                </constraints>
             </view>
         </window>
     </objects>
